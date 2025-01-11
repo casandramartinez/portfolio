@@ -133,6 +133,7 @@
 
 						</div>
 					</header>
+
 			<!-- Menu -->
 			<nav id="menu">
 				<h2>Menu</h2>
@@ -168,6 +169,64 @@
 					</li>
 				</ul>
 			</nav>
+			
+			<script>
+				// Add event listeners to all dropdown buttons
+				document.querySelectorAll('.dropdown-button').forEach(button => {
+					button.addEventListener('click', (event) => {
+						const dropdown = button.nextElementSibling;
+			
+						// Close any open dropdowns first
+						document.querySelectorAll('.dropdown').forEach(menu => {
+							if (menu !== dropdown) {
+								menu.style.display = 'none';
+							}
+						});
+			
+						// Toggle the clicked dropdown's visibility
+						if (dropdown.style.display === 'block') {
+							dropdown.style.display = 'none';
+						} else {
+							dropdown.style.display = 'block';
+						}
+			
+						// Prevent the event from propagating to the document
+						event.stopPropagation();
+					});
+				});
+			
+				// Add a click listener to the menu itself
+				document.querySelector('#menu').addEventListener('click', (event) => {
+					// Check if the clicked target is a dropdown or a dropdown button
+					if (!event.target.closest('.dropdown-button') && !event.target.closest('.dropdown')) {
+						// Hide all dropdowns
+						document.querySelectorAll('.dropdown').forEach(menu => {
+							menu.style.display = 'none';
+						});
+					}
+				});
+			
+				// Optional: If the user clicks anywhere outside the menu, hide the dropdowns
+				document.addEventListener('click', (event) => {
+					if (!event.target.closest('#menu')) {
+						document.querySelectorAll('.dropdown').forEach(menu => {
+							menu.style.display = 'none';
+						});
+					}
+				});
+			</script>
+				
+			
+			<style>
+				/* Initial styles for dropdown menus */
+				.dropdown {
+					display: none; /* Hidden by default */
+					position: relative;
+					padding: 0;
+					margin: 0;
+					list-style: none;
+				}
+			</style>
 
 				<!-- Main -->
 				<div id="main">
