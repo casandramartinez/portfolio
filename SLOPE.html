@@ -1,0 +1,311 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>SLOPE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif; /* Default font */
+            line-height: 1.6;
+            color: #333;
+            background-color: #f6e9f3;
+            margin: 0;
+            padding: 0;
+        }
+		.flex-container {
+			display: flex;               /* Enable flexbox */
+			justify-content: center;     /* Center images horizontally */
+			gap: 20px;                   /* Optional: Add spacing between images */
+		}
+        #main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(255, 1, 1, 0.1);
+            border-radius: 8px;
+        }
+		/* General Styles */
+		#menu {
+        color: white;
+ 	   }
+		#menu ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		#menu ul li {
+			position: relative; /* Ensures dropdowns are positioned relative to the parent */
+		}
+
+		/* Dropdown Button */
+		#menu ul li .dropdown-button {
+			cursor: pointer;
+			display: block;
+			padding: 10px 15px;
+			text-decoration: none;
+			color: #fefefe;
+		}
+
+		/* Dropdown Menu */
+		#menu ul li .dropdown {
+			display: none; /* Hidden by default */
+			position: absolute; /* Positioned relative to parent */
+			top: 100%; /* Places dropdown below the parent menu item */
+			left: 0;
+			background-color: #c1c0c0;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			z-index: 1000; /* Ensures dropdown appears above other elements */
+			min-width: 200px; /* Ensures consistent width for dropdowns */
+			padding: 0;
+			margin: 0;
+		}
+
+		/* Show Dropdown on Hover */
+		#menu ul li:hover .dropdown {
+			display: block;
+		}
+
+		/* Dropdown Items */
+		#menu ul li .dropdown li {
+			margin: 0;
+		}
+
+		#menu ul li .dropdown li a {
+			padding: 10px 15px;
+			text-decoration: none;
+			color: #f5f2f2;
+			display: block;
+		}
+
+		#menu ul li .dropdown li a:hover {
+			background-color: #f6e9f3;
+		}
+		#menu .dropdown-button:hover {
+        color: #ffffff; /* Optional: Slightly lighter color on hover */
+    	}
+		#menu ul li a {
+        color: white;
+        text-decoration: none; /* Removes underline for links */
+   		}
+
+		#menu .dropdown-button {
+        color: white;
+   		 }
+
+        h1, h2 {
+            font-family: 'Oswald', serif; /* Different font for headers */
+            color: #222;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        h2 {
+            font-size: 1.25em;
+            margin-top: 1.5em;
+        }
+        p {
+            margin: 1em 0;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Casandra Martinez</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+
+			<!-- Menu -->
+			<nav id="menu">
+				<h2>Menu</h2>
+				<ul>
+					<li>
+						<span class="dropdown-button">About Me</span>
+						<ul class="dropdown">
+							<li><a href="index.html">Introduction</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="dropdown-button">Research Projects</span>
+						<ul class="dropdown">
+							<li><a href="REMC.html">REMC Test Stand</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="dropdown-button">Coursework Projects</span>
+						<ul class="dropdown">
+							<li><a href="Car Jack.html">Car Jack</a></li>
+							<li><a href="Counting.html">Counting Children's Toy</a></li>
+							<li><a href="Submarine.html">Submarine CAD</a></li>
+							<li><a href="cubesat.html">Control Panel for CubeSat</a></li>
+							<li><a href="thermo.html">Thermoacoustic Cooling</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="dropdown-button">Engineering Projects</span>
+						<ul class="dropdown">
+							<li><a href="SLOPE.html">SLOPE</a></li>
+							<li><a href="Microg.html">Autonomous Astronaut Rescue Vehicle</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>SLOPE: South Lunar Observational Prospecting Expedition</h1>
+							<p><strong>Skills:</strong> Aerospace systems, space architechture, FEA analysis, system integration, proposal writing, prototyping and iteration, algorithm development</p>
+							<p> <strong>Role: </strong> Mission Lead and Principal Mechanical Engineer</p>
+
+							<div class="flex-container">
+								<span class="image"><img src="images/slope badge.png" alt="Image 2" style="width: 400px; height: auto;" /></span>
+								<span class="image"><img src="images/slope conops.png" alt="" style="width: 500px; height: auto;" /></span>
+							</div>
+
+							<p>As co-lead for the Columbia Space Initiative's RASC-AL mission, I led a team of 15 students in ideation, engineering design, simulation, and early manufacturing efforts for
+								a dual-rover lunar architechture to explore permanently shadowed regions (PSRs) for valuable volatiles.</p>								
+							
+							<p>The mission architecture consists of four main systems: the Crater Rim Energy System Transporter (CREST), the Tethered Radial vOlatiles Garage Hub (TROGH),
+								the MObile Volatile ExporteR (MOVER), and two prospecting Sampling Ice Rovers (SIRs) named SIR-Jack and SIR-Jill. 
+								During launch, the CREST, MOVER, and both SIRs will be stored safely within the large TROGH, awaiting deployment via connecting tethers.
+								After landing, the TROGH will position the CREST on the Shackleton rim utilizing a forklift mechanism and stabilizers for secure detachment. 
+								CREST will then drill itself securely into the lunar regolith using its four aluminum Kevlar anchors, perform communications testing, and begin solar power production. 
+								Once the power base has been secured and deemed fully functional, the TROGH system will begin to unravel the tether connecting to the CREST and begin its fully autonomous descent 
+								into the crater.</p>
+							<p>As the TROGH descends, it will utilize its housed drilling mechanism to periodically drive stakes into the ground, which are continuously connected via a tether. 
+								The tether is pulled by a winch on TROGH, allowing it to rappel the rocky descent and increase stabilization. 
+								Once the TROGH has completed its descent, the two SIRs will exit the TROGH and begin prospecting, using its connecting tether to stabilize its trajectory.
+								Both the TROGH and the SIRs are equipped with HazCams, NavCams, laser range scanner sensors, and photoelectric sensors to full visibility in 
+								dark lunar craters. Inspired by NASA's SHERPA AI software, our system will build on collected data from NASA's VIPER propsecting mission 
+								to create optimal paths. Autonomous direction finding and motor control were implemented on a Raspberry Pi microprocessor in Python.</p>
+							
+							<div class="flex-container">
+								<figure>
+									<span class="image"><img src="images/crest.PNG" alt="Image 2" style="width: 400px; height: auto;" /></span>
+									<figcaption>Crater Rim Energy System Transporter (CREST)</figcaption>
+								</figure>
+
+								<figure>
+									<span class="image"><img src="images/trogh side.PNG" alt="" style="width: 500px; height: auto;" /></span>
+									<figcaption>Tethered Radial vOlatiles Garage Hub (TROGH)</figcaption>
+								</figure>
+
+								<figure>
+									<span class="image"><img src="images/mover_assembly.PNG" alt="Image 2" style="width: 400px; height: auto;" /></span>
+									<figcaption>MObile Volatile ExporteR (MOVER)</figcaption>
+								</figure>
+								
+								<figure>
+									<span class="image"><img src="images/SIR_assm.PNG" alt="" style="width: 500px; height: auto;" /></span>
+									<figcaption>Sampling Ice Rovers (SIRs)</figcaption>
+								</figure>	
+							</div>		
+
+								
+
+							<p>Solar power will be implemented at the CREST, actively harnessing the continual sunlight of regions of Shacketon’s rim.  
+								Solar panels will be mounted on three sides of the CREST, as one side will be reserved for the tether and sample deposits. 
+								Power from solar panels on the CREST will be transmitted down into the crater through a high-efficiency laser, and the TROGH and SIRs will be equipped 
+								with laser PV converters to convert the power from the lasers back into electricity to power their operations and batteries. 
+								These converters are made up of many small x-band antennas, each connected to a rectifier diode, that will convert the laser to DC power. 
+								This will allow the SIRs to recharge without returning to the TROGH, extending their operating time. The CREST’s laser beaming system can transmit more than 
+								10 kW, allowing it to both charge batteries and actively power the operations of individual SIRs and the TROGH.
+							</p>	
+							<p>As mission lead, I closely worked on every aspect of the design and gained $2,000 in funding from the New York Space Grant for our research and prototype development. 
+								Read our prposal and watch our pitch video below!
+							</p>
+							<div style="margin-top: 40px; text-align: center;">
+							<h2>Watch our Proposal Video:</h2>
+							<video width="800" height="450" controls>
+								<source src="videos/Columbia University RASC-AL Mission SLOPE.mp4" type="video/mp4">
+							</video>
+							</div>
+							<h2 style="text-align: center;">Read the Final Report:</h2>
+							<div style="width: 100%; text-align: center;">
+								<iframe src="pdfs/Columbia University RASC-AL_ SLOPE.pdf" width="80%" height="600px" style="border: none;"></iframe>
+							  </div>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Contact me</h2>
+								<ul class="icons">
+									<li><a href="www.linkedin.com/in/casandra-martinez21" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="tel: 832-563-6457" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="mailto:cm4149@columbia.edu" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

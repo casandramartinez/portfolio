@@ -1,0 +1,259 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Car Jack</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<title>About Me</title>
+		<style>
+        body {
+            font-family: 'Roboto', sans-serif; /* Default font */
+            line-height: 1.6;
+            color: #333;
+            background-color: #f6e9f3;
+            margin: 0;
+            padding: 0;
+        }
+		.flex-container {
+			display: flex;               /* Enable flexbox */
+			justify-content: center;     /* Center images horizontally */
+			gap: 20px;                   /* Optional: Add spacing between images */
+		}
+        #main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(255, 1, 1, 0.1);
+            border-radius: 8px;
+        }
+		/* General Styles */
+		#menu {
+        color: white;
+ 	   }
+		#menu ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		#menu ul li {
+			position: relative; /* Ensures dropdowns are positioned relative to the parent */
+		}
+
+		/* Dropdown Button */
+		#menu ul li .dropdown-button {
+			cursor: pointer;
+			display: block;
+			padding: 10px 15px;
+			text-decoration: none;
+			color: #fefefe;
+		}
+
+		/* Dropdown Menu */
+		#menu ul li .dropdown {
+			display: none; /* Hidden by default */
+			position: absolute; /* Positioned relative to parent */
+			top: 100%; /* Places dropdown below the parent menu item */
+			left: 0;
+			background-color: #c1c0c0;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			z-index: 1000; /* Ensures dropdown appears above other elements */
+			min-width: 200px; /* Ensures consistent width for dropdowns */
+			padding: 0;
+			margin: 0;
+		}
+
+		/* Show Dropdown on Hover */
+		#menu ul li:hover .dropdown {
+			display: block;
+		}
+
+		/* Dropdown Items */
+		#menu ul li .dropdown li {
+			margin: 0;
+		}
+
+		#menu ul li .dropdown li a {
+			padding: 10px 15px;
+			text-decoration: none;
+			color: #f5f2f2;
+			display: block;
+		}
+
+		#menu ul li .dropdown li a:hover {
+			background-color: #f6e9f3;
+		}
+		#menu .dropdown-button:hover {
+        color: #ffffff; /* Optional: Slightly lighter color on hover */
+    }
+		#menu ul li a {
+        color: white;
+        text-decoration: none; /* Removes underline for links */
+   		}
+
+		#menu .dropdown-button {
+        color: white;
+   		 }
+
+        h1, h2 {
+            font-family: 'Oswald', serif; /* Different font for headers */
+            color: #222;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        h2 {
+            font-size: 1.25em;
+            margin-top: 1.5em;
+        }
+        p {
+            margin: 1em 0;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+		</style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Casandra Martinez</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+			<!-- Menu -->
+			<nav id="menu">
+				<h2>Menu</h2>
+				<ul>
+					<li>
+						<span class="dropdown-button">About Me</span>
+						<ul class="dropdown">
+							<li><a href="index.html">Introduction</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="dropdown-button">Research Projects</span>
+						<ul class="dropdown">
+							<li><a href="REMC.html">REMC Test Stand</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="dropdown-button">Coursework Projects</span>
+						<ul class="dropdown">
+							<li><a href="Car Jack.html">Car Jack</a></li>
+							<li><a href="Counting.html">Counting Children's Toy</a></li>
+							<li><a href="Submarine.html">Submarine CAD</a></li>
+							<li><a href="cubesat.html">Control Panel for CubeSat</a></li>
+							<li><a href="thermo.html">Thermoacoustic Cooling</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="dropdown-button">Engineering Projects</span>
+						<ul class="dropdown">
+							<li><a href="SLOPE.html">SLOPE</a></li>
+							<li><a href="Microg.html">Autonomous Astronaut Rescue Vehicle</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
+				<!-- Main -->
+				<div id="main">
+					<div class="inner" style="display: flex; align-items: flex-start; gap: 20px;">
+						<!-- Text Section -->
+						<div style="flex: 1;">
+							<h1>Machined Car Jack</h1>
+							<p><strong>Skills:</strong> CNC mill and lathe, 3D printing, laser cutting, assembly</p>
+							<p><strong>Course:</strong> Intro to Machining MECE E1008</p>
+							<p>
+								Completed as part of my Superuser training in the Mechanical Engineering Teaching Lab, this car jack was manufactured out of aluminum, delrin, acrylic, and brass. 
+								The heart-shaped base was laser cut, the top and bottom pieces were 3D printed, the side pieces and links were milled, and the torquing rod was lathed.
+								In my role as Superuser, I now guide students through the machining and assembly of their car jacks.
+							</p>
+						</div>
+
+						<!-- Image Section -->
+						<div>
+							<span class="image">
+								<img src="images/car jack.jpg" alt="Machined Car Jack" style="width: 350px; height: auto; border-radius: 8px;">
+							</span>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="www.linkedin.com/in/casandra-martinez21" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="tel: 832-563-6457" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="mailto:cm4149@columbia.edu" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

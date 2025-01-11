@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>About Me</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<title>About Me</title>
+		<style>
+        body {
+            font-family: 'Roboto', sans-serif; /* Default font */
+            line-height: 1.6;
+            color: #333;
+            background-color: #f6e9f3;
+            margin: 0;
+            padding: 0;
+        }
+		.flex-container {
+			display: flex;               /* Enable flexbox */
+			justify-content: center;     /* Center images horizontally */
+			gap: 20px;                   /* Optional: Add spacing between images */
+		}
+        #main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(255, 1, 1, 0.1);
+            border-radius: 8px;
+        }
+		/* General Styles */
+		#menu {
+        color: white;
+ 	   }
+		#menu ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		#menu ul li {
+			position: relative; /* Ensures dropdowns are positioned relative to the parent */
+		}
+
+		/* Dropdown Button */
+		#menu ul li .dropdown-button {
+			cursor: pointer;
+			display: block;
+			padding: 10px 15px;
+			text-decoration: none;
+			color: #fefefe;
+		}
+
+		/* Dropdown Menu */
+		#menu ul li .dropdown {
+			display: none; /* Hidden by default */
+			position: absolute; /* Positioned relative to parent */
+			top: 100%; /* Places dropdown below the parent menu item */
+			left: 0;
+			background-color: #c1c0c0;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			z-index: 1000; /* Ensures dropdown appears above other elements */
+			min-width: 200px; /* Ensures consistent width for dropdowns */
+			padding: 0;
+			margin: 0;
+		}
+
+		/* Show Dropdown on Hover */
+		#menu ul li:hover .dropdown {
+			display: block;
+		}
+
+		/* Dropdown Items */
+		#menu ul li .dropdown li {
+			margin: 0;
+		}
+
+		#menu ul li .dropdown li a {
+			padding: 10px 15px;
+			text-decoration: none;
+			color: #f5f2f2;
+			display: block;
+		}
+
+		#menu ul li .dropdown li a:hover {
+			background-color: #f6e9f3;
+		}
+		#menu .dropdown-button:hover {
+        color: #ffffff; /* Optional: Slightly lighter color on hover */
+    }
+		#menu ul li a {
+        color: white;
+        text-decoration: none; /* Removes underline for links */
+   		}
+
+		#menu .dropdown-button {
+        color: white;
+   		 }
+
+        h1, h2 {
+            font-family: 'Oswald', serif; /* Different font for headers */
+            color: #222;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        h2 {
+            font-size: 1.25em;
+            margin-top: 1.5em;
+        }
+        p {
+            margin: 1em 0;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+		</style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Casandra Martinez</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+			<!-- Menu -->
+			<nav id="menu">
+				<h2>Menu</h2>
+				<ul>
+					<li>
+						<span class="dropdown-button">About Me</span>
+						<ul class="dropdown">
+							<li><a href="index.html">Introduction</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="dropdown-button">Research Projects</span>
+						<ul class="dropdown">
+							<li><a href="REMC.html">REMC Test Stand</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="dropdown-button">Coursework Projects</span>
+						<ul class="dropdown">
+							<li><a href="Car Jack.html">Car Jack</a></li>
+							<li><a href="Counting.html">Counting Children's Toy</a></li>
+							<li><a href="Submarine.html">Submarine CAD</a></li>
+							<li><a href="cubesat.html">Control Panel for CubeSat</a></li>
+							<li><a href="thermo.html">Thermoacoustic Cooling</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="dropdown-button">Engineering Projects</span>
+						<ul class="dropdown">
+							<li><a href="SLOPE.html">SLOPE</a></li>
+							<li><a href="Microg.html">Autonomous Astronaut Rescue Vehicle</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
+				<!-- Main -->
+				<div id="main">
+					<div class="inner" style="display: flex; align-items: flex-start; gap: 20px;">
+						<!-- Text Section -->
+						<div style="flex: 1;">
+							<h1>Autonomous Astronaut Rescue Boat</h1>
+							<p><strong>Skills:</strong> Engineering design, iteration, system integration</p>
+							<p><strong>My Role:</strong> Mechanical Engineering Team Member</p>
+							<p>
+								My sophomore year, I worked with the Columbia Space Initiative's Micro-g team to conceptualize, design, and fabricate an autonomous
+								rescue boat for astronauts. In the event of a contingency landing, our design allowed responding recovery forces to access required 
+								on-scene capsule hazard information prior to committing personnel into a hazard zone.
+								Our design uses a dual-loop Adcock antenna array to locate a swept-tone emergency signal and subsequently deliver
+								emergency supplies to stranded astronauts.
+							</p>
+							<p>
+								My effors were primarily focused on the boat's multihull design, which ensured the vehicle's stability in unpredictable ocean waves. The 
+								primary boat structure was designed on Solidworks and an early prototype was 3D printed using PLA and SLS.
+								I also directed the boat's propulsion design, which utilized two reversible motors on the rear of the boat, 
+								allowing for full 2D steering capability.
+							</p>
+							<p>
+								When the challenge concluded, our team looked for different ways to apply our design and ultimately turned to environmental applications.
+								The team worked closely with Columbia's Lamont Doherty Earth Observatory to adapt our design to detect algae levels in the nearby 
+								Morningside Park's articifial pond. I primarily worked on the design of the boat's sampling mechanism, using a syringe-like attachment
+								 to filter large debris from samples.
+								The device is currently being tested in Morningside Park. Read about our boat's impact in this <a href="https://www.nytimes.com/2023/07/21/nyregion/algae-morningside-park-pond.html" target="_blank">2023 New York Times article</a>.
+							</p>
+							
+						</div>
+
+						<!-- Image Section -->
+						<div>
+							<span class="image">
+								<img src="images/SEA_LION.jpg" alt="SEA_LION" style="width: 350px; height: auto; border-radius: 8px;">
+								<img src="images/boat2.webp" alt="SEA_LION" style="width: 350px; height: auto; border-radius: 8px;">
+							</span>
+						</div>
+						
+					</div>
+					<h2 style="text-align: center;">Read the Final Report:</h2>
+					<div style="width: 100%; text-align: center;">
+						<iframe src="pdfs/2023-SEA-LION-Proposal-1.pdf" width="80%" height="600px" style="border: none;"></iframe>
+					  </div>
+				</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="www.linkedin.com/in/casandra-martinez21" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="tel: 832-563-6457" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="mailto:cm4149@columbia.edu" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
