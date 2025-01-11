@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>LIONESS Control Display</title>
@@ -14,7 +9,7 @@
 		<title>About Me</title>
 		<style>
         body {
-            font-family: 'Roboto', sans-serif; /* Default font */
+            font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             color: #333;
             background-color: #f6e9f3;
@@ -22,89 +17,79 @@
             padding: 0;
         }
 		.flex-container {
-			display: flex;               /* Enable flexbox */
-			justify-content: center;     /* Center images horizontally */
-			gap: 20px;                   /* Optional: Add spacing between images */
+			display: flex;
+			justify-content: center;
+			gap: 20px;
 		}
         #main {
             padding: 20px;
             max-width: 1200px;
             margin: auto;
             background-color: #fff;
-            box-shadow: 0 4px 6px rgba(255, 1, 1, 0.1);
+            box-shadow: 0 4px 6px rgb(255, 255, 255);
             border-radius: 8px;
         }
-		/* General Styles */
 		#menu {
-        color: white;
- 	   }
+            color: white;
+        }
 		#menu ul {
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
 		}
-
 		#menu ul li {
-			position: relative; /* Ensures dropdowns are positioned relative to the parent */
+			position: relative;
 		}
-
-		/* Dropdown Button */
 		#menu ul li .dropdown-button {
 			cursor: pointer;
 			display: block;
 			padding: 10px 15px;
 			text-decoration: none;
-			color: #fefefe;
+			color: #fffdfd;
+			display: flex;
+			justify-content: space-between; /* To align text and the arrow */
+			align-items: center;
 		}
 
-		/* Dropdown Menu */
+		#menu ul li .dropdown-button:after {
+			content: " ▼";  /* Add the dropdown arrow */
+			font-size: 0.9em;
+			margin-left: 10px;  /* Space between text and the arrow */
+		}
+
 		#menu ul li .dropdown {
-			display: none; /* Hidden by default */
-			position: absolute; /* Positioned relative to parent */
-			top: 100%; /* Places dropdown below the parent menu item */
+			display: none;
+			position: absolute;
+			top: 100%;
 			left: 0;
-			background-color: #c1c0c0;
+			background-color: #fbfbfb;
 			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-			z-index: 1000; /* Ensures dropdown appears above other elements */
-			min-width: 200px; /* Ensures consistent width for dropdowns */
+			z-index: 1000;
+			min-width: 200px;
 			padding: 0;
 			margin: 0;
 		}
-
-		/* Show Dropdown on Hover */
-		#menu ul li:hover .dropdown {
-			display: block;
-		}
-
-		/* Dropdown Items */
 		#menu ul li .dropdown li {
 			margin: 0;
 		}
-
 		#menu ul li .dropdown li a {
 			padding: 10px 15px;
 			text-decoration: none;
-			color: #f5f2f2;
+			color: #0b0b0b;
 			display: block;
 		}
-
 		#menu ul li .dropdown li a:hover {
-			background-color: #f6e9f3;
+			background-color: #f1d0e9;
 		}
 		#menu .dropdown-button:hover {
-        color: #ffffff; /* Optional: Slightly lighter color on hover */
-    }
+            color: #ffffff;
+        }S
 		#menu ul li a {
-        color: white;
-        text-decoration: none; /* Removes underline for links */
-   		}
-
-		#menu .dropdown-button {
-        color: white;
-   		 }
-
+            color: white;
+            text-decoration: none;
+        }
         h1, h2 {
-            font-family: 'Oswald', serif; /* Different font for headers */
+            font-family: 'Oswald', serif;
             color: #222;
         }
         h1 {
@@ -124,8 +109,6 @@
             border-radius: 8px;
         }
 		</style>
-
-		  
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
 	</head>
 	<body class="is-preload">
