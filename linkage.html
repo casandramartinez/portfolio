@@ -1,116 +1,113 @@
 <!DOCTYPE HTML>
-<!--
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>About Me</title>
+		<title>Robotic Four-bar Linkage</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<title>About Me</title>
 		<style>
-			body {
-				font-family: 'Roboto', sans-serif; /* Default font */
-				line-height: 1.6;
-				color: #333;
-				background-color: #f6e9f3;
-				margin: 0;
-				padding: 0;
-			}
-			.flex-container {
-				display: flex;               /* Enable flexbox */
-				justify-content: center;     /* Center images horizontally */
-				gap: 20px;                   /* Optional: Add spacing between images */
-			}
-			#main {
-				padding: 20px;
-				max-width: 1200px;
-				margin: auto;
-				background-color: #fff;
-				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-				border-radius: 8px;
-			}
-			/* General Styles */
-			#menu ul {
-				list-style-type: none;
-				margin: 0;
-				padding: 0;
-			}
-	
-			#menu ul li {
-				position: relative; /* Ensures dropdowns are positioned relative to the parent */
-			}
-	
-			/* Dropdown Button */
-			#menu ul li .dropdown-button {
-				cursor: pointer;
-				display: block;
-				padding: 10px 15px;
-				text-decoration: none;
-				color: #333;
-			}
-	
-			/* Dropdown Menu */
-			#menu ul li .dropdown {
-				display: none; /* Hidden by default */
-				position: absolute; /* Positioned relative to parent */
-				top: 100%; /* Places dropdown below the parent menu item */
-				left: 0;
-				background-color: #fff;
-				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-				z-index: 1000; /* Ensures dropdown appears above other elements */
-				min-width: 200px; /* Ensures consistent width for dropdowns */
-				padding: 0;
-				margin: 0;
-			}
-	
-			/* Show Dropdown on Hover */
-			#menu ul li:hover .dropdown {
-				display: block;
-			}
-	
-			/* Dropdown Items */
-			#menu ul li .dropdown li {
-				margin: 0;
-			}
-	
-			#menu ul li .dropdown li a {
-				padding: 10px 15px;
-				text-decoration: none;
-				color: #333;
-				display: block;
-			}
-	
-			#menu ul li .dropdown li a:hover {
-				background-color: #f6e9f3;
-			}
-	
-	
-	
-			h1, h2 {
-				font-family: 'Oswald', serif; /* Different font for headers */
-				color: #222;
-			}
-			h1 {
-				font-size: 2.5em;
-				margin-bottom: 0.5em;
-			}
-			h2 {
-				font-size: 1.25em;
-				margin-top: 1.5em;
-			}
-			p {
-				margin: 1em 0;
-			}
-			.image img {
-				max-width: 100%;
-				height: auto;
-				border-radius: 8px;
-			}
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f6e9f3;
+            margin: 0;
+            padding: 0;
+        }
+		.flex-container {
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+		}
+        #main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgb(255, 255, 255);
+            border-radius: 8px;
+        }
+		#menu {
+            color: white;
+        }
+		#menu ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		#menu ul li {
+			position: relative;
+		}
+		#menu ul li .dropdown-button {
+			cursor: pointer;
+			display: block;
+			padding: 10px 15px;
+			text-decoration: none;
+			color: #fffdfd;
+			display: flex;
+			justify-content: space-between; /* To align text and the arrow */
+			align-items: center;
+		}
+
+		#menu ul li .dropdown-button:after {
+			content: " ▼";  /* Add the dropdown arrow */
+			font-size: 0.9em;
+			margin-left: 10px;  /* Space between text and the arrow */
+		}
+
+		#menu ul li .dropdown {
+			display: none;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			background-color: #fbfbfb;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			z-index: 1000;
+			min-width: 200px;
+			padding: 0;
+			margin: 0;
+		}
+		#menu ul li .dropdown li {
+			margin: 0;
+		}
+		#menu ul li .dropdown li a {
+			padding: 10px 15px;
+			text-decoration: none;
+			color: #0b0b0b;
+			display: block;
+		}
+		#menu ul li .dropdown li a:hover {
+			background-color: #f1d0e9;
+		}
+		#menu .dropdown-button:hover {
+            color: #ffffff;
+        }S
+		#menu ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        h1, h2 {
+            font-family: 'Oswald', serif;
+            color: #222;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        h2 {
+            font-size: 1.25em;
+            margin-top: 1.5em;
+        }
+        p {
+            margin: 1em 0;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
 		</style>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
 	</head>
@@ -124,7 +121,7 @@
 
 							<!-- Logo -->
 								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Casandra's Portfolio</span>
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Casandra Martinez</span>
 								</a>
 
 							<!-- Nav -->
@@ -141,22 +138,16 @@
 				<nav id="menu">
 					<h2>Menu</h2>
 					<ul>
-						<li><a href="index.html">About Me</a></li>
 						<li>
-							<span class="dropdown-button">Research</span>
+							<span class="dropdown-button">About Me</span>
 							<ul class="dropdown">
-								<li><a href="REMC.html">REMC Test Stand</a></li>
+								<li><a href="index.html">Introduction</a></li>
 							</ul>
 						</li>
 						<li>
-							<span class="dropdown-button">Course Projects</span>
+							<span class="dropdown-button">Research Projects</span>
 							<ul class="dropdown">
-								<li><a href="Car Jack.html">Car Jack</a></li>
-								<li><a href="Counting.html">Counting Children's Toy</a></li>
-								<li><a href="Submarine.html">Submarine CAD</a></li>
-								<li><a href="cubesat.html">Control Panel for CubeSat</a></li>
-								<li><a href="linkage.html">Four-bar Linkage</a></li>
-								<li><a href="thermo.html">Thermoacoustic Cooling</a></li>
+								<li><a href="REMC.html">REMC Test Stand</a></li>
 							</ul>
 						</li>
 						<li>
@@ -166,34 +157,121 @@
 								<li><a href="Microg.html">Autonomous Astronaut Rescue Vehicle</a></li>
 							</ul>
 						</li>
+						<li>
+							<span class="dropdown-button">Coursework Projects</span>
+							<ul class="dropdown">
+								<li><a href="cubesat.html">Control Panel for CubeSat</a></li>
+								<li><a href="linkage.html">Robotic Four-Bar Linkage</a></li>
+								<li><a href="thermo.html">Thermoacoustic Cooling</a></li>
+								<li><a href="Car Jack.html">Car Jack</a></li>
+								<li><a href="Counting.html">Counting Children's Toy</a></li>
+								<li><a href="Submarine.html">Submarine CAD</a></li>
+							</ul>
+						</li>
 					</ul>
 				</nav>
-
+				
+				<script>
+					// Add event listeners to all dropdown buttons
+					document.querySelectorAll('.dropdown-button').forEach(button => {
+						button.addEventListener('click', (event) => {
+							const dropdown = button.nextElementSibling;
+				
+							// Close any open dropdowns first
+							document.querySelectorAll('.dropdown').forEach(menu => {
+								if (menu !== dropdown) {
+									menu.style.display = 'none';
+								}
+							});
+				
+							// Toggle the clicked dropdown's visibility
+							if (dropdown.style.display === 'block') {
+								dropdown.style.display = 'none';
+							} else {
+								dropdown.style.display = 'block';
+							}
+				
+							// Prevent the event from propagating to the document
+							event.stopPropagation();
+						});
+					});
+				
+					// Add a click listener to the menu itself
+					document.querySelector('#menu').addEventListener('click', (event) => {
+						// Check if the clicked target is a dropdown or a dropdown button
+						if (!event.target.closest('.dropdown-button') && !event.target.closest('.dropdown')) {
+							// Hide all dropdowns
+							document.querySelectorAll('.dropdown').forEach(menu => {
+								menu.style.display = 'none';
+							});
+						}
+					});
+				
+					// Optional: If the user clicks anywhere outside the menu, hide the dropdowns
+					document.addEventListener('click', (event) => {
+						if (!event.target.closest('#menu')) {
+							document.querySelectorAll('.dropdown').forEach(menu => {
+								menu.style.display = 'none';
+							});
+						}
+					});
+				</script>
+					
+				
+				<style>
+					/* Initial styles for dropdown menus */
+					.dropdown {
+						display: none; /* Hidden by default */
+						position: relative;
+						padding: 0;
+						margin: 0;
+						list-style: none;
+					}
+				</style>
+				
 				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<h1>About Me</h1>
-
-							<div class="flex-container">
-								<span class="image"><img src="images/csi.jpeg" alt="Image 1" style="width: 350px; height: auto;"  /></span>
-								<span class="image"><img src="images/IMG_9462.jpg" alt="Image 2" style="width: 200px; height: auto;" /></span>
-							</div>
-
-							<h2>Background</h2>
-							<p>Hi! My name is Casandra, and I am a senior undergraduate at Columbia University pursuing a B.S. in Mechanical Engineering with a minor in Computer Science. As a first-generation Mexican-American student, I owe my pursuit of higher education to the Questbridge National College Match and the Gates Scholarship. My work is done in the spirit of bringing STEM education to historically excluded communities.</p> 
-							<p>My time at Columbia, aside from my technical pursuits, has been defined by my time with Casa Latina: a special-interest community for Latine students. In my time, I have played an integral part in coordinating cultural events, fundraisers, and hosting career workshops for the Latine community in campus and across Harlem.</p>
-							
-							<div class="flex-container">
-							<span class="image"><img src="images/ddd1c566-de3f-4e00-8a60-1774fbe51dc5.JPG" alt="" style="width: 350px; height: auto;"/></span>
-							<span class="image"><img src="images/66e08ab0-9444-4dd8-9fa2-a36755dd615e.JPG" alt="" style="width: 200px; height: auto;" /></span>
-							</div>
-							
-							<h2>Experiences and Motivation</h2>
-							<p>	During my studies, I have pursued several aerospace projects as a member of the Columbia Space Initiative, working as a mechanical engineer team member in the Micro-g mission and leading the RASC-AL (Revolutionary Aerospace System Concepts - Academic Linkage) mission. This year’s RASC-AL project has involved dynamic energy systems and lunar rover prospecting, and we have collaborated with the Indian Institute of Space Science and Technology (IIST) to create a lunar architecture for mass transportation of lunar volatiles.</p> 
-							<p>As a lover of rapid prototyping and novel manufacturing techniques, I work as a Superuser at Columbia’s Mechanical Engineering Lab, able to pursue my passion for making my ideas come to life. In my free time, I like to read science fiction novels, go on runs in Riverside Park, and camp out for Saturday Night Live tapings.  Welcome to a collection of some of my past and current work.
+				<div id="main">
+					<div class="inner" style="display: flex; align-items: flex-start; gap: 20px;">
+						<!-- Text Section -->
+						<div style="flex: 1;">
+							<h1>Robotic Four-bar Linkage</h1>
+							<p><strong>Skills:</strong> Machining, 3D printing, Rapid Prototyping, PID Control, Arduino</p>
+							<p><strong>Course:</strong> Machine Design MECEE3409</p>
+							<p>
+								Within a group of four other mechanical engineering students, I designed, built, and tested a robotic linkage meant to automatically press arcade buttons on 
+								a playing field	as many times as possible in 60 seconds. The goal is to press the blue, red, and yellow buttons as they light up - with the option of pressing 
+								a bonus green button. Our final linkage used an Arduino to power a DC electric motor to move the linkage to the desired button position, after which a second
+								servo motor actuated a cam follower to press the button as quickly as possible. 
+							</p>
+							<p>
+								I designed the characteristics of our linkage (transmission angle, volume, cost, electronics etc.) and contributed to the machining of our mechanism. Water jetting,
+								CNC milling, lathes, and various kinds of 3D printing were used in our prototyping process. The most iterated component of our design was our button-ressing mechanism:
+								a servo motor attached to a geared cam shaft that turns provided rotational motion to linear motion to press buttons. This mechanism was able to press the bonus button 
+								because of an attached gear attached two geared cam followers. Our final design used a combination of nylon and resin 3D prints.
+							</p>
+							<p>
+								I helped create our linkage's circuit using an Arduino, H-bridge, DC-DC converter, and a transistor. I contributed to circuit assembly using solters, power supplies,
+								and multimeters. Our linkage responded to position feedback using a PID controller, which was tuned itiretaively to achieve optimal results.
+								Arduino IDE code developed for our linkage can be found 
+									<a href="https://github.com/casandramartinez/Machine-Design" target="_blank" style="text-decoration: none; color: blue;">
+										here
+									</a>.
+								 In the end, our linkage was able to press 72 buttons in 60 seconds.
 							</p>
 						</div>
+
+						<!-- Image Section -->
+						<div>
+							<span class="image">
+								<img src="images/final linkage.png" alt="Linkage" style="width: 300px; height: auto; border-radius: 8px;">
+								<div style="display: flex; gap: 10px; justify-content: center; align-items: center;">
+									<img src="images/coupler 1.png" alt="Display" style="width: 300px; height: auto; border-radius: 8px;">
+								</div>
+								
+							</span>
+						</div>
 					</div>
+				</div>
 
 				<!-- Footer -->
 					<footer id="footer">
